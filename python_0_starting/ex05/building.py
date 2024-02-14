@@ -1,5 +1,6 @@
 import sys
 import string
+
 def main(myString):
     upperCase = 0
     lowerCase = 0
@@ -24,12 +25,20 @@ def main(myString):
     print(f'{spaces} spaces')
     print(f'{digits} digits')
 
+def readInput() -> str:
+    line=''
+    while line == '':
+        line = input('What is the text to count?\n')
+    return line
+
 if __name__ == "__main__":
     try:
         if(len(sys.argv)>2): 
             raise(AssertionError('more than one argument is provided'))
+        if(len(sys.argv)==1):
+            myString = readInput()
         if(len(sys.argv) == 2):
             myString=sys.argv[1]
-            main(myString)
+        main(myString)
     except AssertionError as error:
         print(AssertionError.__name__ + ":", error)

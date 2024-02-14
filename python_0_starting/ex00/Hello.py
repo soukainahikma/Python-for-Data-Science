@@ -1,11 +1,7 @@
-# https://www.geeksforgeeks.org/differences-and-applications-of-list-tuple-set-and-dictionary-in-python/
-
 ft_list = ["Hello", "tata!"]
 ft_tuple = ("Hello", "toto!")
 ft_set = {"Hello", "tutu!"}
 ft_dict = {"Hello" : "titi!"}
-
-#your code here
 
 ft_list.pop()
 ft_list.append('World!')
