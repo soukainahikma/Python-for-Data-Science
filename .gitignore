@@ -1,1 +1,3 @@
-./ex02/__pycache__/
+__pycache__/
+dist/
+ft_package.egg-info/
